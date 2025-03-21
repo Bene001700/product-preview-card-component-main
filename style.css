@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary color */
+    --Green-500: hsl(158, 36%, 37%);
+    --Green-700: hsl(158, 42%, 18%);
+
+    /* Neutral color */
+    --Black: hsl(212, 21%, 14%);
+    --Grey: hsl(228, 12%, 48%);
+    --Cream: hsl(30, 38%, 92%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--Cream);
+    color: var(--Black);
+    padding: 20px 13px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px
+}
+.conteiner {
+    background-color: var(--White);
+    border-radius: 10px;
+}
+
+.category {
+    color: var(--Grey);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.250rem;
+}
+
+.content {
+    padding: 20px 25px 20px 30px;    
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 700;   
+}
+
+.content p {    
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: var(--Grey);
+   
+}
+
+.prices {
+    display: flex ;
+    color: var(--Green-500);    
+}
+
+.prices p:first-child{
+    font-size: 2.125rem;
+    font-weight: 700;
+    padding-right: 1rem;
+    color: var(--Green-500);
+    font-family: 'Fraunces', serif;
+}
+
+.prices p:last-child{
+    padding-right: 1rem;
+    text-decoration: line-through;
+
+}
+
+
+.addCart {
+    background-color: var(--Green-500);
+    color: var(--White);
+    font-size: 0.875rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    outline: none;
+    border: none;
+    padding: 15px 0px;
+}
+
+.addCart img {
+    width: 25px;
+    height: 25px;
+}
