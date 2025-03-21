@@ -32,7 +32,8 @@ body {
 
 img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px 10px 0px 0px
 }
 .conteiner {
@@ -41,19 +42,20 @@ img {
 }
 
 .category {
+    display: block;
     color: var(--Grey);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.250rem;
 }
 
 .content {
-    padding: 20px 25px 20px 30px;    
+    padding: 20px 30px 20px 30px;    
     background-color: var(--White);
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
     border-radius: 10px;
 }
 
@@ -104,10 +106,46 @@ h1 {
     gap: 8px;
     outline: none;
     border: none;
-    padding: 15px 0px;
+    padding: 10px 0px;
 }
 
 .addCart img {
     width: 25px;
     height: 25px;
+}
+
+
+@media screen and (min-width: 800px) {
+    
+    body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .conteiner {        
+        margin: auto;
+        display: grid;
+        grid-template-columns: 18.75rem 18.75rem;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    figure {
+        min-width: 280px;
+    }
+    .content {    
+        gap: 25px;
+    }
+
+    img {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .addCart:hover {
+        background-color: var(--Green-700);
+        transition: background-color .5s;
+        
+    }
+    
 }
